@@ -146,7 +146,6 @@ while i <= 64:
 
 print("舍罕王应该给达依尔", sum, "粒麦子！")
 
-"""
 i = 0
 wheats=1
 sum = 0
@@ -156,6 +155,34 @@ while i <= 64:
     i = i + 1
 
 print("舍罕王应该给达依尔", sum, "粒麦子！")
+
+第九讲作业
+b = True
+while b:
+    n = int(input("请输入年："))
+    if n%4 ==0:
+        if (n/4)%100==0:
+            print("您输入的是世纪闰年")
+        else:
+            print("您输入的是闰年")
+    else:
+        print("不是闰年")
+"""
+
+year = input('请输入一个年份：')
+
+while not year.isdigit():
+    year = input("抱歉，您的输入有误，请输入一个整数：")
+
+year = int(year)
+if year % 400 == 0:
+    print(year, "是闰年！")
+else:
+    if year % 4 == 0 and year % 100 != 0:
+        print(year, "是闰年！")
+    else:
+        print(year, "不是闰年！")
+    
 
 
 
